@@ -1,0 +1,24 @@
+name: 洛天依
+
+on:
+  workflow_dispatch:
+
+jobs:
+  spider:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@master
+
+    - name: 'Set up Python'
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.7
+
+    - name: Getting Img Info
+      run: |
+        pip install requests
+        pip install lxml
+        pip install pymysql
+        pwd
+        python index.py 洛天依
