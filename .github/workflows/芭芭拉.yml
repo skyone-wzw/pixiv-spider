@@ -16,6 +16,11 @@ jobs:
         python-version: 3.7
 
     - name: Getting Img Info
+      env:
+        SQLHOST: ${{ secrets.SQLHOST }}
+        SQLUSER: ${{ secrets.SQLUSER }}
+        SQLPSD: ${{ secrets.SQLPSD }}
+        SQLDB: ${{ secrets.SQLDB }}
       run: |
         pip install requests
         pip install lxml
