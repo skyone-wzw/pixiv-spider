@@ -9,7 +9,7 @@ headers_logged = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
                   'Chrome/90.0.4430.93 Safari/537.36',
     'Referer': "https://www.pixiv.net/",
-    'Cookie': "PHPSESSID=37666475_lrU8rY9ZskNdHzoSvVWFjPEniua6XZed" + os.environ["COOKIE"]
+    'Cookie': "PHPSESSID=" + os.environ["COOKIE"]
 }
 headers_normal = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
