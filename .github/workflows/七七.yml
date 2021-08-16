@@ -21,6 +21,7 @@ jobs:
         SQLUSER: ${{ secrets.SQLUSER }}
         SQLPSD: ${{ secrets.SQLPSD }}
         SQLDB: ${{ secrets.SQLDB }}
+        COOKIE: ${{ secrets.COOKIE }}
       run: |
         pip install requests
         pip install lxml
